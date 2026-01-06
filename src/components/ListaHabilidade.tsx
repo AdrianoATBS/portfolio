@@ -10,6 +10,8 @@ import { TbBrandCSharp, TbSql } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { MdArchitecture } from "react-icons/md";
 
 export default function ListaHabilidade() {
   return (
@@ -44,6 +46,8 @@ export default function ListaHabilidade() {
         <SwiperSlide><SiNextdotjs size={60} className="text-destaque" /></SwiperSlide>
         <SwiperSlide><FaGithub size={60} className="text-destaque" /></SwiperSlide>
         <SwiperSlide><FaDocker size={60} className="text-destaque" /></SwiperSlide>
+        <SwiperSlide><RiTailwindCssFill size={60} className="text-destaque" /></SwiperSlide>
+        <SwiperSlide><MdArchitecture size={60} className="text-destaque" /></SwiperSlide>   
       </Swiper>
 
     </section>
