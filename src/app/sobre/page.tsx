@@ -1,4 +1,4 @@
-import Cabecalho from "@/src/components/Cabecalho"
+
 import { sobreMim } from "@/src/mock/sobreMim"
 
 export default function SobreMim() {
