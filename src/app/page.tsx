@@ -1,10 +1,9 @@
-import Cabecalho from "../components/Cabecalho";
-import Inicio from "./inicio/Inicio";
+import Inicio from "./inicio/page";
+
 
 export default function Home() {
   return (
     <div >
-        <Cabecalho />
         <Inicio />
     </div>
   );

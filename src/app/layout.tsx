@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-
+import Cabecalho from "@/src/components/Cabecalho";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--fonte-texto",
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} bg-fundo antialiased `}
       >
+        <Cabecalho />
         {children}
       </body>
     </html>

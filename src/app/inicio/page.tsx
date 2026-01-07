@@ -1,4 +1,3 @@
-import Cabecalho from "@/src/components/Cabecalho";
 import ListaHabilidade from "@/src/components/ListaHabilidade";
 import 'swiper/css';
 import Contato from "@/src/components/Contato";
