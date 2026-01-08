@@ -5,7 +5,7 @@ export interface SobreMim {
 
 export const sobreMim: SobreMim = {
   pergunta: "Quem sou eu ? ",
-  texto: `Olá, eu sou o Adriano Teixeira, sou Desenvolvedor de Software com foco em back-end e atuação crescente em front-end, movido pela curiosidade e pela vontade de criar soluções úteis para pessoas. Minha curiosidade na tecnologia começou aos 15 anos, influenciada por amigos que já atuavam na área, mas foi aos 20 anos, no início de 2024, que decidi mergulhar de vez nesse universo.
+  texto: `Olá, eu sou o Adriano Teixeira Benevenuto Sampaio, sou Desenvolvedor de Software com foco em back-end e atuação crescente em front-end, movido pela curiosidade e pela vontade de criar soluções úteis para pessoas. Minha curiosidade na tecnologia começou aos 15 anos, influenciada por amigos que já atuavam na área, mas foi aos 20 anos, no início de 2024, que decidi mergulhar de vez nesse universo.
 
 Desde então, tenho me dedicado ao estudo constante e ao desenvolvimento de habilidades técnicas e comportamentais. Atualmente curso Análise e Desenvolvimento de Sistemas na Estácio e concluí o programa Estartando Devs, onde tive contato com princípios e práticas avançadas como DDD, CQRS, Clean Code e arquitetura em camadas, além de treinamentos em comunicação e trabalho em equipe.
 
