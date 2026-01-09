@@ -10,7 +10,7 @@ export default function CardCursos() {
   };
 
   return (
-    <section className="px-6 pt-10 pl-10 w-full max-w-md ">
+    <section className="px-6 pt-10 w-full max-w-lg mx-auto">
       <h2 className="text-3xl font-[--font-titulos] text-texto mb-6">Cursos</h2>
 
       <div className="flex flex-col gap-4 ">
@@ -21,16 +21,16 @@ export default function CardCursos() {
             <div
               key={curso.nomeCurso}
               onClick={() => toggleCurso(curso.nomeCurso)}
-              className="bg-card rounded-lg  p-4 cursor-pointer hover:transition-transform duration-300 max-w-md w-full"
+              className="bg-card rounded-2xl p-4 cursor-pointer hover:transition-transform duration-300 max-w-md w-full"
             >
               <h3 className="text-xl font-bold mb-2 text-texto font-[--font-titulos]">{curso.nomeCurso}</h3>
 
               {aberto && (
                 <div className="space-y-1 text-texto-secundario">
-                  <p className="font-[--font-texto]">Instituição: {curso.instituicao}</p>
-                  {curso.instrutor && <p className="font-[--font-texto]">Instrutor: {curso.instrutor}</p>}
-                  <p className="font-[--font-texto]">Duração: {curso.duracao}</p>
-                  <p className="font-[--font-texto]">Conclusão: {curso.conclusao}</p>
+                  <p className="font-[--font-texto] "><span className="text-texto">Instituição:</span> {curso.instituicao}</p>
+                  {curso.instrutor && <p className="font-[--font-texto] "><span className="text-texto">Instrutor:</span> {curso.instrutor}</p>}
+                  <p className="font-[--font-texto] "><span className="text-texto">Duração:</span> {curso.duracao}</p>
+                  <p className="font-[--font-texto] "><span className="text-texto">Conclusão:</span> {curso.conclusao}</p>
                   {curso.imagem && <Image src={curso.imagem} alt={curso.nomeCurso} width={350} height={200} />}
                 </div>
               )}

@@ -1,5 +1,22 @@
+"use client";
+import { useState, useRef } from "react";
 import Link from "next/link";
 export default function Cabecalho() {
+    const [aberto, setAberto] = useState(false);
+
+    const timeoutId = useRef<NodeJS.Timeout | null>(null);
+
+    const abrir = () => {
+        clearTimeout(timeoutId.current!);
+        setAberto(true);
+    };
+
+    const fechar = () => {
+        timeoutId.current = setTimeout(() => (
+            setAberto(false)
+        ), 200);
+    };
+
     return(
         <header className="w-full flex flex-col items-end justify-center pt-4 pr-8">
                 <nav>
@@ -10,10 +27,11 @@ export default function Cabecalho() {
                         <li className="hover:text-destaque transition-colors">
                             <Link href="/sobre">Sobre Mim</Link></li>
                         
-                        <li className="relative group">
+                        <li className="relative " onMouseEnter={abrir} onMouseLeave={fechar}>
                             <span className="hover:text-destaque transition-colors cursor-pointer">Projetos</span>
                             
-                            <ul className="absolute hidden group-hover:flex flex-col bg-card p-2 rounded-md shadow-md">
+                            {aberto && (
+                                <ul className="absolute flex flex-col  bg-card p-2 rounded-md shadow-md ">
                                
                                 <li className="hover:text-destaque transition-colors">
                                     <Link href="/projetos/frontend">Front-End</Link></li>
@@ -24,6 +42,7 @@ export default function Cabecalho() {
                                 <li className="hover:text-destaque transition-colors">
                                     <Link href="/projetos/integracao">Integração</Link></li>
                             </ul>
+                            )}
                         </li>
                         <li className="hover:text-destaque transition-colors">
                             <Link href="/cursos">Cursos e Metas</Link></li>

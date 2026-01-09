@@ -46,6 +46,6 @@ export const projetosFrontend: PrrojetoFrontend[] = [
     ],
 
     repositorio: "https://github.com/AdrianoATBS/vizinho-D-agua",
-    video: ""
+    video: "/videos/teste.mp4",
   },
 ];
