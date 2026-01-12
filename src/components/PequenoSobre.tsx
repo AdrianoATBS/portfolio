@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function PequenoSobre() {
     return(
-         <section className="flex items-center justify-between px-8 max-w-screen-xl mx-auto gap-3 pt-10">
+         <section className="flex items-center justify-between px-8 max-w-screen-xl mx-auto gap-3 pt-10 md:flex-row md:justify-between flex-col">
             <Image src="/foto.jpeg" alt="Foto de Perfil" width={200} height={200} className="rounded-full mx-auto mt-8"/>
             
             <div className="flex flex-col text-left ">
