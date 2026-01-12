@@ -1,7 +1,9 @@
 "use client";
 import { useState, useRef } from "react";
 import Link from "next/link";
-export default function Cabecalho() {
+
+
+export default function Cabecalho( ) {
     const [aberto, setAberto] = useState(false);
 
     const timeoutId = useRef<NodeJS.Timeout | null>(null);
@@ -18,7 +20,7 @@ export default function Cabecalho() {
     };
 
     return(
-        <header className="w-full flex flex-col items-end justify-center pt-4 pr-8">
+        <header className="w-full flex flex-col items-end justify-center pt-4 pr-8 hidden md:flex">
                 <nav>
                     <ul className="text-texto flex gap-8 font-semibold text-lg cursor-pointer font-[--font-titulos] ">
                         <li className="hover:text-destaque transition-colors">
