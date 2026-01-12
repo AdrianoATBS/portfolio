@@ -5,10 +5,10 @@ import Link from "next/link";
 
 
 export default function CardIntegracao(){
-    const [aberto, setAberto] = useState<string | null>(null);
+    const [aberto, setAberto] = useState<number | null>(null);
 
-    const toggleGrupo = (nomeProjeto: string) => {
-      setAberto(aberto === nomeProjeto ? null : nomeProjeto);
+    const toggleGrupo = (id: number) => {
+      setAberto((estadoAtual) => (estadoAtual === id ? null : id));
     }
 
     return(
@@ -18,15 +18,16 @@ export default function CardIntegracao(){
 
       <div className="flex flex-col gap-6">
         {integracao.map((projeto) => {
-          const ativo = aberto === projeto.nomeProjeto;
+          const ativo = aberto === projeto.id;
 
           return (
             <div
-              key={projeto.nomeProjeto}
-              className="bg-card p-4 rounded-2xl cursor-pointer hover:transition duration-300"
-              onClick={() => toggleGrupo(projeto.nomeProjeto)}
+              key={projeto.id}
+              className="bg-card p-4 rounded-2xl w-full max-w-lg mx-auto cursor-pointer hover:transition duration-300"
+              
             >
-              <h3 className="font-[--font-titulos] text-texto text-lg">
+              <h3 className="font-[--font-titulos] text-texto text-lg cursor-pointer"
+              onClick={() => toggleGrupo(projeto.id)}>
                 {projeto.nomeProjeto}
               </h3>
 

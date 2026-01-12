@@ -1,4 +1,5 @@
 export interface Integracao{
+    id: number;
     nomeProjeto: string;
     descricao: string;
     tecnologias: string[];
@@ -14,4 +15,6 @@ export interface Integracao{
     video: string;
 }
 
-export const integracao : Integracao[] = []
+export const integracao : Integracao[] = [
+    
+]

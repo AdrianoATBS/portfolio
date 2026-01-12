@@ -1,4 +1,5 @@
 export interface PrrojetoFrontend{
+    id: number;
     nomeProjeto: string;
     descricao: string;
     tecnologias: string[];
@@ -16,6 +17,7 @@ export interface PrrojetoFrontend{
 
 export const projetosFrontend: PrrojetoFrontend[] = [
   {
+    id: 1,
     nomeProjeto: "Vizinho D’Água",
     descricao:
       "Um aplicativo criado para ajudar na denúncia de problemas relacionados à água em comunidades, promovendo a conscientização e a ação coletiva.",
@@ -48,4 +50,6 @@ export const projetosFrontend: PrrojetoFrontend[] = [
     repositorio: "https://github.com/AdrianoATBS/vizinho-D-agua",
     video: "/videos/teste.mp4",
   },
+
+  
 ];

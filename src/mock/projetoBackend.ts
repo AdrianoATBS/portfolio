@@ -1,4 +1,5 @@
 export interface PrrojetoBackend{
+    id: number;
     nomeProjeto: string;
     descricao: string;
     tecnologias: string[];
@@ -16,6 +17,7 @@ export interface PrrojetoBackend{
 
 export const projetosBackend: PrrojetoBackend[] = [
   {
+    id: 1,
     nomeProjeto: "Kognito - Plataforma Educacional Gamificada",
     descricao:
       "Plataforma educacional inclusiva para neurodivergentes com gamificação e acompanhamento de progresso.",

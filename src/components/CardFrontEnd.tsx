@@ -4,30 +4,32 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function CardFrontEnd(){
-  const [aberto, setAberto] = useState<string | null>(null);
+  const [aberto, setAberto] = useState<number | null>(null);
 
-  const toggleGrupo = (nomeProjeto: string) => {
-    setAberto(aberto === nomeProjeto ? null : nomeProjeto);
+  const toggleGrupo = (id: number) => {
+    setAberto((estadoAtual) => (estadoAtual === id ? null : id));
   };
 
   return(
-    <section className="px-6 pt-10 w-full max-w-lg mx-auto">
+    <section className="px-6 pt-10 w-full max-w-2xl mx-auto">
       <h2 className="font-[--font-titulos] text-texto text-2xl mb-4">Projetos Front-End</h2>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4">
         {projetosFrontend.map((projeto) => {
-          const ativo = aberto === projeto.nomeProjeto;
+          const ativo = aberto === projeto.id;  
 
           return (
             <div
-              key={projeto.nomeProjeto}
-              className="bg-card p-4 rounded-2xl cursor-pointer hover:transition duration-300"
-              onClick={() => toggleGrupo(projeto.nomeProjeto)}
+              key={projeto.id}
+              className="bg-card p-4 rounded-xl w-full max-w-5xl mx-auto hover:transition duration-300"
+      
             >
-              <h3 className="font-[--font-titulos] text-texto text-lg">
-                {projeto.nomeProjeto}
-              </h3>
-
+              
+            <h3 className="font-[--font-titulos] text-texto text-lg cursor-pointer"
+            onClick={() => toggleGrupo(projeto.id)}>
+              {projeto.nomeProjeto}
+            </h3>
+             
           
               {ativo && (
                     <div className="mt-3 space-y-3">
