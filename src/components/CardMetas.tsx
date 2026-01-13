@@ -22,9 +22,10 @@ export default function CardMetas() {
             <div
               key={grupo.prazo}
               className="bg-card rounded-2xl p-4 cursor-pointer hover:transition-transform duration-300 max-w-md w-full"
-              onClick={() => toggleGrupo(grupo.prazo)}
+              
             >
-              <h3 className="text-xl font-bold text-texto font-[--font-titulos]">{grupo.prazo}</h3>
+              <h3 className="text-xl font-bold text-texto font-[--font-titulos]"
+              onClick={() => toggleGrupo(grupo.prazo)}>{grupo.prazo}</h3>
 
               {ativo && (
                 <div className="mt-3 space-y-3">

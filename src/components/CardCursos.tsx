@@ -20,10 +20,11 @@ export default function CardCursos() {
           return (
             <div
               key={curso.nomeCurso}
-              onClick={() => toggleCurso(curso.nomeCurso)}
+            
               className="bg-card rounded-2xl p-4 cursor-pointer hover:transition-transform duration-300 max-w-md w-full"
             >
-              <h3 className="text-xl font-bold mb-2 text-texto font-[--font-titulos]">{curso.nomeCurso}</h3>
+              <h3 className="text-xl font-bold mb-2 text-texto font-[--font-titulos]"
+                onClick={() => toggleCurso(curso.nomeCurso)}>{curso.nomeCurso}</h3>
 
               {aberto && (
                 <div className="space-y-1 text-texto-secundario">
