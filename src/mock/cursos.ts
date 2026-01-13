@@ -14,7 +14,7 @@ export const cursos: Cursos[] = [
     instrutor: "Jose Carlos Macoratti",
     duracao: "14 horas",
     conclusao: "12/03/2025",
-    imagem: "/CleanArchitecture.png",
+    imagem: "/certificados/CleanArchitecture.png",
    
   },
   {
@@ -23,14 +23,14 @@ export const cursos: Cursos[] = [
     instrutor: "Hugo Vasconcelos",
     duracao: "4.5 horas",
     conclusao: "19/02/2025",
-    imagem: "/MVCCSharp.png",
+    imagem: "/certificados/MVCCSharp.png",
   },
   {
     nomeCurso: "Desenvolvimento Backend (C#, .NET, Clean Arch, SQL/NoSQL, Docker, DDD, SOLID, Scrum)",
     instituicao: "Estartando Devs",
     duracao: "120 horas",
     conclusao: "14/12/2024",
-    imagem: "/BackendEstartandoDevs.png",
+    imagem: "/certificados/BackendEstartandoDevs.png",
   },
   {
     nomeCurso: "Introdução ao Entity Framework Core",
@@ -38,7 +38,7 @@ export const cursos: Cursos[] = [
     instrutor: "Rafael Almeida (MVP)",
     duracao: "3 horas",
     conclusao: "09/08/2024",
-    imagem: "/IntroducaoEntity.png",
+    imagem: "/certificados/IntroducaoEntity.png",
   },
   {
     nomeCurso: "C# COMPLETO Programação Orientada a Objetos + Projetos",
@@ -46,7 +46,7 @@ export const cursos: Cursos[] = [
     instrutor: "Nelio Alves",
     duracao: "38 horas",
     conclusao: "11/10/2025",
-    imagem: "/CSharpCompleto.png",
+    imagem: "/certificados/CSharpCompleto.png",
   },
   {
     nomeCurso: ".NET Core: um curso orientado para o mercado de trabalho",
@@ -54,7 +54,7 @@ export const cursos: Cursos[] = [
     instrutor: "Welisson Arley",
     duracao: "43 horas",
     conclusao: "07/07/2025",
-    imagem: "/DotNetCoreMercado.png",
+    imagem: "/certificados/DotNetCoreMercado.png",
   },
   {
     nomeCurso: "C# - Aplicando Princípios SOLID na prática",
@@ -62,7 +62,7 @@ export const cursos: Cursos[] = [
     instrutor: "Jose Carlos Macoratti",
     duracao: "9 horas",
     conclusao: "31/03/2025",
-    imagem: "/CSharpSolid.png",
+    imagem: "/certificados/CSharpSolid.png",
   },
   {
     nomeCurso: "C# primeiros passos: Lógica de Programação e Algoritmos",
@@ -70,7 +70,7 @@ export const cursos: Cursos[] = [
     instrutor: "Nelio Alves",
     duracao: "7.5 horas",
     conclusao: "10/01/2025",
-    imagem: "/CSharpPrimeirosPassos.png",
+    imagem: "/certificados/CSharpPrimeirosPassos.png",
   },
 
   // 🟨 Infraestrutura / DevOps / Banco
@@ -80,7 +80,7 @@ export const cursos: Cursos[] = [
     instrutor: "Andre Iacono",
     duracao: "5.5 horas",
     conclusao: "12/02/2025",
-    imagem: "/DockerCurso.png",
+    imagem: "/certificados/DockerCurso.png",
   },
   {
     nomeCurso: "Banco de Dados SQL do Zero ao Avançado + Projetos Reais",
@@ -88,7 +88,7 @@ export const cursos: Cursos[] = [
     instrutor: "Andre Iacono",
     duracao: "8 horas",
     conclusao: "24/01/2025",
-    imagem: "/BancoDeDadosSQL.png",
+    imagem: "/certificados/BancoDeDadosSQL.png",
   },
 
   // 🟩 Front-End
@@ -97,14 +97,14 @@ export const cursos: Cursos[] = [
     instituicao: "Danki Code",
     duracao: "81 horas",
     conclusao: "01/03/2023",
-    imagem: "/FrontEndAntigo.png",
+    imagem: "/certificados/FrontEndAntigo.png",
   },
   {
     nomeCurso: "Curso de Lógica de Programação",
     instituicao: "Danki Code",
     duracao: "5 horas",
     conclusao: "27/04/2024",
-    imagem: "/LogicaProgramacao.png",
+    imagem: "/certificados/LogicaProgramacao.png",
   },
   {
     nomeCurso: "Web Frontend Completo: HTML, CSS, JS, TS, React, Next",
@@ -112,14 +112,14 @@ export const cursos: Cursos[] = [
     instrutor: "Jamilton Damasceno e Jorge Sant'Ana",
     duracao: "75.5 horas",
     conclusao: "19/09/2025",
-    imagem: "/WebFrontendCompleto.png",
+    imagem: "/certificados/WebFrontendCompleto.png",
   },
   {
     nomeCurso: "Desenvolvimento Front-End",
     instituicao: "Estartando Devs",
     duracao: "68 horas",
     conclusao: "29/11/2025",
-    imagem: "/FrontEndEstartandoDevs.png",
+    imagem: "/certificados/FrontEndEstartandoDevs.png",
   },
 
   // 🟧 Ferramentas / Controle de Versão
@@ -128,6 +128,6 @@ export const cursos: Cursos[] = [
     instituicao: "Curso em Vídeo",
     duracao: "20 horas",
     conclusao: "27/01/2023",
-    imagem: "/GitHubCursoEmVideo.png",
+    imagem: "/certificados/GitHubCursoEmVideo.png",
   },
 ];

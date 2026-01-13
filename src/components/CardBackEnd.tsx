@@ -89,7 +89,7 @@ export default function CardBackEnd(){
                     <div>
                     <h4 className="font-[--font-titulos] text-texto text-md">Vídeo:</h4>
                        {projeto.video ? (
-                        <video className="rounded-lg mt-2 w-full max-w-md" src={projeto.video} controls></video>
+                        <video className="rounded-lg mt-2 w-50" src={projeto.video} controls></video>
                        ): (
                         <p className="font-[--font-texto] text-texto-secundario text-sm">Vídeo não disponível</p>
                        )}
