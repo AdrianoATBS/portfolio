@@ -8,12 +8,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--fonte-texto",
+  
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600","700"],
   variable: "--fonte-titulos",
+  
 });
 
 export default function RootLayout({
@@ -25,8 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${inter.variable} ${poppins.variable} bg-fundo antialiased `}
-      >
+        className={`${inter.variable} ${poppins.variable} bg-fundo antialiased fonte-texto `}>
         <button className="md:hidden fixed top-4 right-4 z-50 text-texto"
          onClick={() => setMenuAberto(true)}><GiHamburgerMenu size={24} /></button>
         <Cabecalho />
