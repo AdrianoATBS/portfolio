@@ -23,13 +23,15 @@ export default function CardIntegracao(){
           return (
             <div
               key={projeto.id}
-              className="bg-card p-4 rounded-2xl w-full max-w-lg mx-auto cursor-pointer hover:transition duration-300"
+              className="bg-card p-4 rounded-2xl w-full max-w-lg mx-auto cursor-pointer"
               
             >
-              <h3 className="font-[--font-titulos] text-texto text-lg cursor-pointer"
+              <button className="font-[--font-titulos] text-texto text-lg cursor-pointer"
+              aria-haspopup="menu"
+              aria-expanded={ativo}
               onClick={() => toggleGrupo(projeto.id)}>
                 {projeto.nomeProjeto}
-              </h3>
+              </button>
 
           
               {ativo && (
@@ -91,7 +93,7 @@ export default function CardIntegracao(){
                     <div>
                     <h4 className="font-[--font-titulos] text-texto text-md">Vídeo:</h4>
                        {projeto.video ? (
-                        <video className="rounded-lg mt-2 w-50" src={projeto.video} controls></video>
+                        <video className="rounded-lg mt-2 w-48 max-w-sm" src={projeto.video} controls></video>
                        ): (
                         <p className="font-[--font-texto] text-texto-secundario text-sm">Vídeo não disponível</p>
                        )}

@@ -21,11 +21,13 @@ export default function CardMetas() {
           return (
             <div
               key={grupo.prazo}
-              className="bg-card rounded-2xl p-4 cursor-pointer hover:transition-transform duration-300 max-w-md w-full"
+              className="bg-card rounded-2xl p-4 cursor-pointer max-w-md w-full"
               
             >
-              <h3 className="text-xl font-bold text-texto font-[--font-titulos]"
-              onClick={() => toggleGrupo(grupo.prazo)}>{grupo.prazo}</h3>
+              <button className="text-xl font-bold text-texto font-[--font-titulos]"
+              aria-haspopup="menu"
+              aria-expanded={ativo}
+              onClick={() => toggleGrupo(grupo.prazo)}>{grupo.prazo}</button>
 
               {ativo && (
                 <div className="mt-3 space-y-3">

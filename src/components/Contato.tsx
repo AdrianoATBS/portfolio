@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 export default function Contato() {
     return(
-        <footer className="mt-15">
+        <footer className="mt-14">
         <div className="max-w-screen-xl mx-auto py-8 px-4 flex flex-col items-center">
             <h2 className="text-3xl font-[--font-titulos] text-texto mb-4">Contato</h2>
             <div className="flex gap-6 mb-4">

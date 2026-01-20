@@ -30,7 +30,8 @@ export default function Cabecalho( ) {
                             <Link href="/sobre">Sobre Mim</Link></li>
                         
                         <li className="relative " onMouseEnter={abrir} onMouseLeave={fechar}>
-                            <span className="hover:text-destaque transition-colors cursor-pointer">Projetos</span>
+                            <button className="hover:text-destaque transition-colors 
+                            cursor-pointer" aria-haspopup="menu" aria-expanded={aberto}>Projetos</button>
                             
                             {aberto && (
                                 <ul className="absolute flex flex-col  bg-card p-2 rounded-md shadow-md ">

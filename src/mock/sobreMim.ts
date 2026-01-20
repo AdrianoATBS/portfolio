@@ -11,7 +11,7 @@ Desde então, tenho me dedicado ao estudo constante e ao desenvolvimento de habi
 
 Minha experiência mais marcante até agora foi participar do desenvolvimento do Kognito, um aplicativo inclusivo voltado para pessoas neurodivergentes. Atuei no back-end com C# e .NET, aplicando boas práticas de arquitetura e aprendendo não só sobre tecnologia, mas também sobre empatia, colaboração e impacto social.
 
-Nos últimos meses, expandi minha atuação para o front-end. Um dos resultados desse movimento é o Vizinho D’Água, projeto mobile-first desenvolvido com React, TypeScript e Vite, onde criei interfaces para denúncias, comunidades e conteúdos educativos utilizando mockagem de dados. Essa experiência fortaleceu minha visão de desenvolvimento como um fluxo completo — da regra de negócio à interface.
+Nos últimos meses, expandi minha atuação para o front-end. Um dos resultados desse movimento é o Vizinho D’Água, projeto mobile-first desenvolvido com React, TypeScript e Vite, onde criei interfaces para denúncias, comunidades e conteúdos educativos utilizando mockagem de dados. Essa experiência fortaleceu minha visão de desenvolvimento como um fluxo completo da regra de negócio à interface.
 
 Hoje, minhas principais tecnologias incluem C#, .NET, Docker, SQL, Clean Architecture, SOLID e TDD, além de JavaScript, TypeScript, React, Next.js, Vite e Tailwind CSS. Ser capaz de trabalhar em múltiplas camadas da aplicação tornou meu aprendizado mais sólido e me preparou para desafios reais do mercado.
 

@@ -15,7 +15,7 @@ import { MdArchitecture } from "react-icons/md";
 
 export default function ListaHabilidade() {
   return (
-    <section className="flex flex-col items-center mt-15 ">
+    <section className="flex flex-col items-center mt-12 ">
       <h2 className="text-3xl font-[--font-titulos] text-texto mb-6">
         Minhas Habilidades 
       </h2>
