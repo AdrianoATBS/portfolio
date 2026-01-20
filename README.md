@@ -22,7 +22,7 @@ O objetivo deste projeto é servir como portfólio profissional, demonstrando mi
 - TypeScript
 - Tailwind CSS
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 
 1. Clone o repositório:
 ```bash
@@ -39,7 +39,7 @@ http://localhost:3000
 
 ## Status do Projeto
 
-- Em constante evolução
+Em constante evolução
 
 ## Autor
-- Adriano Teixeira
+Adriano Teixeira
