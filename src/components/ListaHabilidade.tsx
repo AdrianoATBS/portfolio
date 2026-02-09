@@ -15,13 +15,13 @@ import { MdArchitecture } from "react-icons/md";
 
 export default function ListaHabilidade() {
   return (
-    <section className="flex flex-col items-center mt-12 ">
+    <section className=" mt-12">
+      
       <h2 className="text-3xl font-[--font-titulos] text-texto mb-6">
         Minhas Habilidades 
       </h2>
 
       <Swiper
-      className="w-full"
         modules={[Autoplay]}
         spaceBetween={10}
         slidesPerView={4}
@@ -49,7 +49,7 @@ export default function ListaHabilidade() {
         <SwiperSlide><RiTailwindCssFill size={60} className="text-destaque" /></SwiperSlide>
         <SwiperSlide><MdArchitecture size={60} className="text-destaque" /></SwiperSlide>   
       </Swiper>
-
+    
     </section>
   );
 }

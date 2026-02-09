@@ -4,10 +4,13 @@ import Contato from "@/src/components/Contato";
 import PequenoSobre from "@/src/components/PequenoSobre";
 export default function Inicio() {
   return (
-    <div >
+    <>
+        <main className="w-full max-w-6xl mx-auto px-4">
         <PequenoSobre />
         <ListaHabilidade /> 
         <Contato />
-    </div>
+
+        </main>
+    </>
   );
 }
