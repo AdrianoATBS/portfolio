@@ -9,44 +9,11 @@ export interface Cursos{
 export const cursos: Cursos[] = [
   // 🟦 Backend / Arquitetura / C#
   {
-    nomeCurso: "Clean Architecture Essencial - ASP .NET Core com C#",
-    instituicao: "Udemy",
-    instrutor: "Jose Carlos Macoratti",
-    duracao: "14 horas",
-    conclusao: "12/03/2025",
-    imagem: "/certificados/CleanArchitecture.png",
-   
-  },
-  {
-    nomeCurso: "Programando em MVC com C# 4 Camadas",
-    instituicao: "Udemy",
-    instrutor: "Hugo Vasconcelos",
-    duracao: "4.5 horas",
-    conclusao: "19/02/2025",
-    imagem: "/certificados/MVCCSharp.png",
-  },
-  {
     nomeCurso: "Desenvolvimento Backend (C#, .NET, Clean Arch, SQL/NoSQL, Docker, DDD, SOLID, Scrum)",
     instituicao: "Estartando Devs",
     duracao: "120 horas",
     conclusao: "14/12/2024",
     imagem: "/certificados/BackendEstartandoDevs.png",
-  },
-  {
-    nomeCurso: "Introdução ao Entity Framework Core",
-    instituicao: "desenvolvedor.io",
-    instrutor: "Rafael Almeida (MVP)",
-    duracao: "3 horas",
-    conclusao: "09/08/2024",
-    imagem: "/certificados/IntroducaoEntity.png",
-  },
-  {
-    nomeCurso: "C# COMPLETO Programação Orientada a Objetos + Projetos",
-    instituicao: "Udemy",
-    instrutor: "Nelio Alves",
-    duracao: "38 horas",
-    conclusao: "11/10/2025",
-    imagem: "/certificados/CSharpCompleto.png",
   },
   {
     nomeCurso: ".NET Core: um curso orientado para o mercado de trabalho",
@@ -55,14 +22,6 @@ export const cursos: Cursos[] = [
     duracao: "43 horas",
     conclusao: "07/07/2025",
     imagem: "/certificados/DotNetCoreMercado.png",
-  },
-  {
-    nomeCurso: "C# - Aplicando Princípios SOLID na prática",
-    instituicao: "Udemy",
-    instrutor: "Jose Carlos Macoratti",
-    duracao: "9 horas",
-    conclusao: "31/03/2025",
-    imagem: "/certificados/CSharpSolid.png",
   },
   {
     nomeCurso: "C# primeiros passos: Lógica de Programação e Algoritmos",
@@ -92,20 +51,6 @@ export const cursos: Cursos[] = [
   },
 
   // 🟩 Front-End
-  {
-    nomeCurso: "Webmaster Front-End Completo",
-    instituicao: "Danki Code",
-    duracao: "81 horas",
-    conclusao: "01/03/2023",
-    imagem: "/certificados/FrontEndAntigo.png",
-  },
-  {
-    nomeCurso: "Curso de Lógica de Programação",
-    instituicao: "Danki Code",
-    duracao: "5 horas",
-    conclusao: "27/04/2024",
-    imagem: "/certificados/LogicaProgramacao.png",
-  },
   {
     nomeCurso: "Web Frontend Completo: HTML, CSS, JS, TS, React, Next",
     instituicao: "Udemy",
