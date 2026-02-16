@@ -1,4 +1,4 @@
-export interface PrrojetoFrontend{
+export interface ProjetoFrontend{
     id: number;
     nomeProjeto: string;
     descricao: string;
@@ -15,7 +15,7 @@ export interface PrrojetoFrontend{
     video: string;
 }
 
-export const projetosFrontend: PrrojetoFrontend[] = [
+export const projetosFrontend: ProjetoFrontend[] = [
   {
     id: 1,
     nomeProjeto: "Vizinho D’Água",
@@ -50,6 +50,34 @@ export const projetosFrontend: PrrojetoFrontend[] = [
     repositorio: "https://github.com/AdrianoATBS/vizinho-D-agua",
     video: "/videos/Vizinho.mp4",
   },
+  {
+  id: 2,
+  nomeProjeto: "Mini Blog",
+  descricao:
+    "Aplicação desenvolvida com Next.js (App Router) consumindo a API pública JSONPlaceholder. O projeto simula um portal de conteúdo com listagem, paginação, busca e navegação dinâmica entre posts e usuários, aplicando organização arquitetural moderna e separação entre Server e Client Components.",
+  tecnologias: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "JSONPlaceholder API",
+  ],
+  contribuicao: [
+    "Estruturação do projeto utilizando App Router do Next.js.",
+    "Implementação de Server Components para busca de dados e Client Components para interatividade.",
+    "Criação de rotas dinâmicas (/posts/[id], /users/[id]).",
+    "Implementação de paginação e busca via query string.",
+    "Tipagem completa dos dados com TypeScript e organização por camadas (app, components, services, types).",
+  ],
+  funcionalidades: [
+    "Listagem e paginação de posts",
+    "Página de detalhe do post com comentários relacionados",
+    "Página de perfil do usuário",
+    "Listagem de posts por usuário",
+  ],
+  repositorio: "https://github.com/AdrianoATBS/mini-blog",
+  video: "",
+}
 
   
 ];
