@@ -76,7 +76,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
     "Listagem de posts por usuário",
   ],
   repositorio: "https://github.com/AdrianoATBS/mini-blog",
-  video: "",
+  video: "MiniBlog.mp4",
 }
 
   
