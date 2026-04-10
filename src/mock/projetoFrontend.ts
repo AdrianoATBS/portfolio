@@ -3,6 +3,7 @@ export interface ProjetoFrontend{
     nomeProjeto: string;
     descricao: string;
     tecnologias: string[];
+    biblioteca?: string[];
     equipe?:{
         backend: number;
         frontend: number;
@@ -77,7 +78,50 @@ export const projetosFrontend: ProjetoFrontend[] = [
   ],
   repositorio: "https://github.com/AdrianoATBS/mini-blog",
   video: "/videos/MiniBlog.mp4",
-}
+  },
+  {
+    id: 3,
+    nomeProjeto: "Viora",
+     descricao:"Viora é um projeto de e-commerce desenvolvido com Next.js, utilizando a API pública DummyJSON. O projeto foi criado com foco no desenvolvimento prático de aplicações frontend modernas, abordando desde integração com APIs REST até organização de código com arquitetura escalável. A aplicação simula um fluxo real de e-commerce, incluindo navegação de produtos, carrinho de compras e autenticação de usuário.",
+     
+    tecnologias: [
+      "Next.js (App Router)",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+    ],
+    biblioteca: [
+      "Swiper.js",
+      "React Icons",
+    ],
+    
+    contribuicao: [
+        "Desenvolvi a interface completa da aplicação utilizando Next.js e React, aplicando o App Router para navegação dinâmica.",
+        "Implementei a integração com a API DummyJSON para exibir produtos, categorias e detalhes de forma dinâmica.",
+        "Criei funcionalidades de carrinho de compras, incluindo adição, remoção e atualização de itens, além do cálculo automático do valor total.",
+        "Implementei a integração com o endpoint de autenticação da API DummyJSON para simular login e registro de usuários.",
+        "Utilizei TailwindCSS para estilização responsiva e moderna da aplicação, garantindo uma boa experiência em diferentes dispositivos.",
+    ],
+    funcionalidades: [
+      "Navegação entre produtos",
+      "Visualização de detalhes dos produtos",
+      "Listagem de produtos por categoria",
+      "Exibição de produtos relacionados",
+      "Paginação de produtos",
+      "Adicionar produtos ao carrinho",
+      "Remover produtos do carrinho",
+      "Atualizar quantidade de itens",
+      "Cálculo automático do valor total",
+      "Simulação de controle de estoque",
+      "Login de usuário",
+      "Registro de usuário",
+    ],
+
+    repositorio: "https://github.com/AdrianoATBS/dummyjson-commerce",
+    video: "/videos/Viora.mp4",
+  },
+  
+  
 
   
 ];
