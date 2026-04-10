@@ -50,6 +50,19 @@ export default function CardIntegracao(){
                         </ul>
                     </div>
 
+                     <div>
+                        <h4 className="font-[--font-titulos] text-texto text-md">Bibliotecas:</h4>
+                        <ul className="list-disc list-inside font-[--font-texto] text-texto-secundario text-sm">
+                        {projeto.biblioteca ? (
+                            projeto.biblioteca.map((lib) => (
+                                <li key={lib}>{lib}</li>
+                            ))
+                        ) : (
+                            <li className="text-texto-secundario italic">Nenhuma biblioteca listada</li>
+                        )}
+                        </ul>
+                    </div>
+
                     {projeto.equipe && (
                         <div>
                         <h4 className="font-[--font-titulos] text-texto text-md">Equipe:</h4>
