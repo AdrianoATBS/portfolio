@@ -3,6 +3,7 @@ export interface PrrojetoBackend{
     nomeProjeto: string;
     descricao: string;
     tecnologias: string[];
+    biblioteca?: string[];
     equipe?:{
         backend: number;
         frontend: number;

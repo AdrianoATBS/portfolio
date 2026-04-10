@@ -3,6 +3,7 @@ export interface Integracao{
     nomeProjeto: string;
     descricao: string;
     tecnologias: string[];
+    biblioteca?: string[];
     equipe?:{
         backend: number;
         frontend: number;
