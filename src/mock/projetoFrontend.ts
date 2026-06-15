@@ -49,7 +49,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
     ],
 
     repositorio: "https://github.com/AdrianoATBS/vizinho-D-agua",
-    video: "/videos/Vizinho.mp4",
+    video: "/videos/frontend/Vizinho.mp4",
   },
   {
   id: 2,
@@ -77,7 +77,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
     "Listagem de posts por usuário",
   ],
   repositorio: "https://github.com/AdrianoATBS/mini-blog",
-  video: "/videos/MiniBlogConcluido.mp4",
+  video: "/videos/frontend/MiniBlogConcluido.mp4",
   },
   {
     id: 3,
@@ -118,7 +118,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
     ],
 
     repositorio: "https://github.com/AdrianoATBS/dummyjson-commerce",
-    video: "/videos/Viora.mp4",
+    video: "/videos/frontend/Viora.mp4",
   },
   
   
