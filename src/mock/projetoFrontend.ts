@@ -120,8 +120,48 @@ export const projetosFrontend: ProjetoFrontend[] = [
     repositorio: "https://github.com/AdrianoATBS/dummyjson-commerce",
     video: "/videos/frontend/VioraConcluido.mp4",
   },
-  
-  
-
-  
+  {
+    id: 4,
+    nomeProjeto: "Focar",
+    descricao: "Focar é uma aplicação desenvolvida com Next.js para auxiliar na organização da rotina através de um gerenciador de tarefas, um temporizador de foco (Pomodoro) e um calendário mensal. O projeto foi criado com o objetivo de praticar desenvolvimento Frontend moderno, consumindo a API pública DummyJSON, aplicando arquitetura baseada em funcionalidades (Feature-Based Architecture), componentização e gerenciamento de estado com React.",
+    tecnologias: [
+      "Next.js (App Router)",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "DummyJSON API",
+    ],
+    biblioteca:[
+      "React Icons",
+    ],
+     contribuicao: [
+    "Estruturei toda a aplicação utilizando Feature-Based Architecture para organizar componentes, serviços, mocks, tipos e funcionalidades por domínio.",
+    "Implementei integração com a API DummyJSON para listar, adicionar e remover tarefas utilizando requisições HTTP.",
+    "Desenvolvi um sistema completo de gerenciamento de tarefas com filtros, alteração de status e atualização dinâmica da interface.",
+    "Implementei um temporizador de foco com controle de iniciar, pausar, reiniciar e ajuste de tempo utilizando React Hooks.",
+    "Desenvolvi um painel de sons ambientes com reprodução de áudio, seleção entre diferentes ambientes sonoros e controle de volume utilizando HTMLAudioElement.",
+    "Implementei um calendário mensal com navegação entre meses, cálculo automático dos dias e destaque da data atual.",
+    "Criei componentes reutilizáveis e uma estrutura escalável visando facilitar futuras evoluções do projeto."
+  ],
+    funcionalidades: [
+    "Adicionar tarefas",
+    "Listar tarefas",
+    "Filtrar tarefas (Todas, Pendentes e Concluídas)",
+    "Marcar tarefas como concluídas",
+    "Excluir tarefas concluídas",
+    "Temporizador de foco",
+    "Iniciar e pausar cronômetro",
+    "Resetar tempo",
+    "Aumentar e diminuir tempo",
+    "Mensagens motivacionais",
+    "Reprodução de sons ambientes",
+    "Controle de volume",
+    "Calendário mensal",
+    "Navegação entre meses",
+    "Destaque do dia atual"
+  ],
+  repositorio:"https://github.com/AdrianoATBS/Focar",
+  video: "/videos/frontend/FocarConcluido.mp4",
+  }
+    
 ];
