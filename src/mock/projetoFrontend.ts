@@ -118,7 +118,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
     ],
 
     repositorio: "https://github.com/AdrianoATBS/dummyjson-commerce",
-    video: "/videos/frontend/Viora.mp4",
+    video: "/videos/frontend/VioraConcluido.mp4",
   },
   
   
