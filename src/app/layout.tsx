@@ -5,6 +5,7 @@ import Cabecalho from "@/src/components/Cabecalho";
 import MenuMobile from "../components/MenuMobile";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--fonte-texto",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Cabecalho />
         <MenuMobile aberto={menuAberto} fechar={() => {setMenuAberto(false)}} />
         {children}
+        <Analytics />
       </body>
     </html>
   );
