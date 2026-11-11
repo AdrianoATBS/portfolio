@@ -2,6 +2,7 @@ export interface ProjetoFrontend{
     id: number;
     nomeProjeto: string;
     descricao: string;
+    objetivo?: string;
     tecnologias: string[];
     biblioteca?: string[];
     equipe?:{
@@ -12,8 +13,15 @@ export interface ProjetoFrontend{
     }
     contribuicao: string[];
     funcionalidades: string[];
+    decisoesTecnicas?: string[];
+    desafios?: string[];
+    aprendizados?: string[];
+    melhoriasFuturas?: string[];
     repositorio: string;
+    deploy?: string;
     video: string;
+    status?: "Concluído" | "Em desenvolvimento";
+    thumbnail?: string;
 }
 
 export const projetosFrontend: ProjetoFrontend[] = [
@@ -50,6 +58,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
 
     repositorio: "https://github.com/AdrianoATBS/vizinho-D-agua",
     video: "/videos/frontend/Vizinho.mp4",
+    status: "Concluído",
   },
   {
   id: 2,
@@ -78,6 +87,7 @@ export const projetosFrontend: ProjetoFrontend[] = [
   ],
   repositorio: "https://github.com/AdrianoATBS/mini-blog",
   video: "/videos/frontend/MiniBlogConcluido.mp4",
+  status: "Concluído",
   },
   {
     id: 3,
@@ -162,6 +172,88 @@ export const projetosFrontend: ProjetoFrontend[] = [
   ],
   repositorio:"https://github.com/AdrianoATBS/Focar",
   video: "/videos/frontend/FocarConcluido.mp4",
+  status: "Concluído",
+  },
+  {
+  id: 5,
+  nomeProjeto: "ContaFlow",
+  descricao:
+    "ContaFlow é uma aplicação web desenvolvida com Next.js para gerenciamento de usuários, integrada a uma API REST própria, desenvolvida em C# e .NET 8. O projeto surgiu com o objetivo de dar uma interface visual ao Gerenciador de Usuários, permitindo que os usuários realizem cadastro, login e gerenciem suas informações pessoais. Além de trabalhar com o desenvolvimento frontend, o projeto permite aplicar conhecimentos de integração com APIs REST, autenticação JWT, componentização e organização de aplicações utilizando Feature-Based Architecture.",
+
+  objetivo:
+    "Desenvolver uma interface frontend para uma API de gerenciamento de usuários criada por mim, colocando em prática a integração entre frontend e backend, o consumo de APIs REST e os conceitos de autenticação e gerenciamento de usuários.",
+
+  tecnologias: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+
+  biblioteca: [
+    "React Icons",
+  ],
+
+  contribuicao: [
+    "Desenvolvi a interface da aplicação utilizando Next.js e React, aplicando o App Router para organização e navegação entre as páginas.",
+    "Estruturei o projeto utilizando Feature-Based Architecture, separando funcionalidades, componentes, hooks, serviços e tipos.",
+    "Implementei a integração com uma API REST própria, desenvolvida em C# e .NET 8.",
+    "Implementei o fluxo de cadastro e autenticação de usuários utilizando JWT.",
+    "Desenvolvi funcionalidades para consulta e atualização das informações pessoais dos usuários.",
+    "Implementei ações de gerenciamento de conta, incluindo desativação, reativação e exclusão de usuários.",
+    "Criei um mecanismo centralizado para consumo da API utilizando Fetch API, incluindo o envio do token JWT nas requisições autenticadas.",
+    "Desenvolvi componentes reutilizáveis e Hooks personalizados para separar a lógica de negócio da interface."
+  ],
+
+  funcionalidades: [
+    "Cadastro de usuários",
+    "Login e autenticação com JWT",
+    "Visualização do painel do usuário",
+    "Consulta de informações do perfil",
+    "Atualização do nome do usuário",
+    "Atualização do endereço de e-mail",
+    "Visualização do status da conta",
+    "Desativação da conta",
+    "Reativação da conta",
+    "Exclusão da conta",
+    "Logout da aplicação",
+    "Configurações do perfil",
+    "Interface responsiva"
+  ],
+
+  decisoesTecnicas: [
+    "Feature-Based Architecture para organização das funcionalidades por domínio.",
+    "Shared Components para centralizar componentes reutilizáveis.",
+    "Custom Hooks para separar a lógica das funcionalidades dos componentes visuais.",
+    "Fetch API com uma implementação centralizada para padronizar as requisições HTTP.",
+    "TypeScript para tipagem dos dados e maior segurança durante o desenvolvimento.",
+    "Autenticação JWT para integração com os endpoints protegidos da API.",
+    "Tailwind CSS com abordagem Mobile First para construção de interfaces responsivas."
+  ],
+
+  desafios: [
+    "Integrar uma aplicação frontend com uma API REST desenvolvida anteriormente por mim.",
+    "Compreender e implementar o fluxo de autenticação JWT entre frontend e backend.",
+    "Organizar o armazenamento e o envio do token nas requisições autenticadas.",
+    "Desenvolver layouts responsivos mantendo a consistência visual entre diferentes tamanhos de tela.",
+    "Separar a lógica de interação e comunicação com a API da camada de apresentação."
+  ],
+
+  aprendizados: [
+    "Integração entre aplicações frontend e APIs REST próprias.",
+    "Consumo de endpoints protegidos utilizando JWT.",
+    "Next.js App Router.",
+    "React Hooks e Custom Hooks.",
+    "Componentização e reutilização de código.",
+    "TypeScript aplicado ao consumo de APIs.",
+    "Feature-Based Architecture.",
+    "Organização de serviços e configuração centralizada de requisições.",
+    "Desenvolvimento de interfaces responsivas."
+  ],
+
+  repositorio: "https://github.com/AdrianoATBS/conta-flow",
+  video: "/videos/frontend/ContaFlow.mp4",
+  status: "Concluído"
   }
     
 ];
