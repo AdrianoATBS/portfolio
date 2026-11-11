@@ -1,7 +1,8 @@
-export interface PrrojetoBackend{
+export interface ProjetoBackend{
     id: number;
     nomeProjeto: string;
     descricao: string;
+    objetivo?: string;
     tecnologias: string[];
     biblioteca?: string[];
     equipe?:{
@@ -12,11 +13,18 @@ export interface PrrojetoBackend{
     }
     contribuicao: string[];
     funcionalidades: string[];
+    decisoesTecnicas?: string[];
+    desafios?: string[];
+    aprendizados?: string[];
+    melhoriasFuturas?: string[];
     repositorio: string;
+    deploy?: string;
     video: string;
+    status?: "Concluído" | "Em desenvolvimento";
+    thumbnail?: string;
 }
 
-export const projetosBackend: PrrojetoBackend[] = [
+export const projetosBackend: ProjetoBackend[] = [
   {
     id: 1,
     nomeProjeto: "Kognito - Plataforma Educacional Gamificada",
@@ -50,32 +58,67 @@ export const projetosBackend: PrrojetoBackend[] = [
   },
   {
     id: 2,
-    nomeProjeto: "API de Gerenciamento de Usuarios",
-    descricao: "API REST desenvolvida para gerenciamento de usuários, criada com foco em estudos de desenvolvimento Backend utilizando .NET 8. O projeto foi construído seguindo os princípios de Arquitetura em Camadas, separando responsabilidades entre Domain, Application, Infrastructure e API.",
-    tecnologias: ["C#", ".NET 8", "ASP.NET Core", "SQL Server",  "Docker", "Azure Data Studio"],
+    nomeProjeto: "API de Gerenciamento de Usuários",
+    descricao: "API REST desenvolvida para gerenciamento de usuários utilizando .NET 8 e Arquitetura em Camadas. Possui autenticação JWT e operações de gerenciamento de contas, utilizando as Claims do token para identificar o usuário autenticado em operações relacionadas à própria conta.",
+    objetivo: "Praticar conceitos de desenvolvimento Backend, organização de aplicações em camadas, persistência de dados, autenticação e autorização, além da construção de APIs REST.",
+    tecnologias: ["C#", ".NET 8", "ASP.NET Core", "SQL Server", "Docker", "Azure Data Studio"],
     biblioteca: ["Entity Framework Core", "JWT Bearer Authentication", "Swagger / Swashbuckle"],
     contribuicao: [
-        "Estruturação da aplicação utilizando Arquitetura em Camadas",
-        "Implementação da autenticação e autorização com JWT",
-        "Criação dos endpoints de gerenciamento de usuários",
-        "Configuração do Entity Framework Core com SQL Server",
-        "Implementação do Repository Pattern",
-        "Desenvolvimento de Middleware Global para tratamento de exceções",
-        "Containerização da aplicação com Docker",
-        "Documentação da API utilizando Swagger/OpenAPI",
+      "Estruturação da aplicação utilizando Arquitetura em Camadas",
+      "Implementação da autenticação e autorização com JWT",
+      "Criação dos endpoints de gerenciamento de usuários",
+      "Implementação da identificação do usuário autenticado por meio das Claims do JWT",
+      "Utilização do contexto da requisição para operações relacionadas à própria conta",
+      "Configuração do Entity Framework Core com SQL Server",
+      "Implementação do Repository Pattern",
+      "Desenvolvimento de Middleware Global para tratamento de exceções",
+      "Containerização da aplicação com Docker",
+      "Documentação da API utilizando Swagger / OpenAPI"
     ],
     funcionalidades: [
-      "Criar usuário",
-      "Obter usuário por Id",
-      "Alterar nome",
-      "Alterar email",
-      "Desativar usuário",
-      "Reativar usuário",
-      "Excluir usuário",
-      " Login com JWT",
+      "Cadastro de usuários",
+      "Login e geração de JWT",
+      "Consulta de usuário por Id",
+      "Consulta dos dados do usuário autenticado",
+      "Alteração de nome e e-mail",
+      "Desativação da própria conta",
+      "Reativação da própria conta",
+      "Exclusão da própria conta",
       "Autenticação e autorização via Bearer Token"
     ],
+    decisoesTecnicas: [
+      "Organização da aplicação utilizando Arquitetura em Camadas",
+      "Separação de responsabilidades entre Domain, Application, Infrastructure e API",
+      "Utilização do JWT para autenticação e autorização",
+      "Identificação do usuário autenticado por meio das Claims presentes no token",
+      "Uso do contexto da requisição para operações relacionadas à própria conta",
+      "Centralização do acesso a dados utilizando Repository Pattern",
+      "Utilização de DTOs para transferência de dados entre as camadas"
+    ],
+    desafios: [
+      "Implementar autenticação e autorização utilizando JWT",
+      "Compreender o funcionamento das Claims e sua utilização para identificar o usuário autenticado",
+      "Evoluir operações que anteriormente dependiam do envio do Id para utilizar o contexto de autenticação",
+      "Integrar Entity Framework Core com SQL Server",
+      "Organizar responsabilidades entre as camadas da aplicação",
+      "Implementar tratamento global de exceções"
+    ],
+    aprendizados: [
+      "Arquitetura em Camadas",
+      "Repository Pattern",
+      "Injeção de Dependência",
+      "Entity Framework Core",
+      "Autenticação e autorização com JWT",
+      "Claims e identificação do usuário autenticado",
+      "Contexto HTTP e HttpContextAccessor",
+      "Desenvolvimento de APIs REST",
+      "Separação de responsabilidades",
+      "Tratamento global de exceções"
+    ],
+    
     repositorio: "https://github.com/AdrianoATBS/gerenciador-de-usuario-api",
     video: "/videos/backend/GerenciadorDeUsuarios.mp4",
-  }
-  ];
+    status: "Concluído"
+  },
+  
+];
