@@ -109,7 +109,17 @@ export default function CardBackEnd(){
                         <p className="font-[--font-texto] text-texto-secundario text-sm">Vídeo não disponível</p>
                        )}
                     </div>
-                    
+                    <h4 className="font-[--font-titulos] text-texto text-md">Link para o vídeo:</h4>
+                    {projeto.linkVideo ? (
+                        <Link href={projeto.linkVideo} 
+                        className="text-destaque font-[--font-texto] text-sm underline" 
+                        target="_blank"
+                        >
+                        {projeto.linkVideo}
+                        </Link>
+                    ) : (
+                        <p className="font-[--font-texto] text-texto-secundario text-sm">Link não disponível</p>
+                    )}
                 </div>
               )}
             </div>

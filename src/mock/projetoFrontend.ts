@@ -20,6 +20,7 @@ export interface ProjetoFrontend{
     repositorio: string;
     deploy?: string;
     video: string;
+    linkVideo?: string;
     status?: "Concluído" | "Em desenvolvimento";
     thumbnail?: string;
 }
